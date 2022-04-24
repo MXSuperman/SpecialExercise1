@@ -71,6 +71,26 @@ public class Main {
             System.out.println(value);
         }
 
+        // Exercise 7
+
+        String first = "1 3 5";
+        String  second = "2 4 6";
+        String delimiter = " ";
+
+        System.out.println(String.join(delimiter, first, second));
+
+// Exercise 8
+
+        String sort = "aabccddefgghiijjkk";
+
+        String[] sorting = sort.trim().split("");
+        for (int i = 0; i < sorting.length - 1; i++) {
+            if (sorting[i].equals(sorting[i + 1])) {
+                System.out.print(sorting[i]);
+            }
+        }
+        System.out.println();
+
 // Exercise 6
 
         String[] fullNames = {"ivanov ivan ivanovich"};
